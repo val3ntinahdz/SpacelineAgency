@@ -1,4 +1,7 @@
-# React + Vite
+# Spaceline Agency landing page
+
+check the docs for React developer tools: 
+- https://react.dev/learn/react-developer-tools
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
