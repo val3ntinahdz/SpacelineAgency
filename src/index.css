@@ -1,70 +1,66 @@
+@font-face {
+  font-family: Urbanist;
+  src: url(../src/assets/fonts/Urbanist-Medium.ttf);
+}
+
 @import "tailwindcss";
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@theme {
+  --color-background: hsl(var(--background));
+  --color-banner-background: hsl(var(--banner-background));
+  --color-foreground: hsl(var(--foreground));
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color-primary: hsl(var(--primary));
+  --color-secondary: hsl(var(--secondary));
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  --color-card: hsl(var(--card));
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --font-urbanist: Urbanist, "sans-serif";
+
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --banner-background: linear-gradient(180deg, #0c0639 0%, #312E81 40%, #6366F1 100%);
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+  .bg-banner {
+    background: var(--banner-background);
   }
 }
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 620px) {
+    max-width: 640px;
+  }
+
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
