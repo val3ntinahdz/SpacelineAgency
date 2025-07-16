@@ -1,9 +1,25 @@
+@import "tailwindcss";
+
 @font-face {
-  font-family: Urbanist;
-  src: url(../src/assets/fonts/Urbanist-Medium.ttf);
+  font-family: 'Urbanist';
+  src: url('../src/assets/fonts/Urbanist-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
-@import "tailwindcss";
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../src/assets/fonts/Urbanist-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../src/assets/fonts/Manrope-Light.ttf') format('truetype');
+  font-style: normal;
+}
+
 
 @theme {
   --color-background: hsl(var(--background));
@@ -16,14 +32,23 @@
   --color-card: hsl(var(--card));
 
   --font-urbanist: Urbanist, "sans-serif";
+  --font-manrope: 'Manrope', sans-serif;
+
+  --text-tiny: 26px;
+  --text-big: 70px;
 
 }
 
 
 @layer base {
   :root {
-    --banner-background: linear-gradient(180deg, #0c0639 0%, #312E81 40%, #6366F1 100%);
+    --banner-background: linear-gradient(180deg,
+  #0a0a36 0%,
+  #1f1d72 35%,
+  #4f46e5 70%,
+  #a5b4fc 100%);
   }
+  
   .bg-banner {
     background: var(--banner-background);
   }
@@ -64,3 +89,39 @@
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.gradient-text {
+  background: linear-gradient(
+    to right, 
+    #CAD4FF,
+    #7D88FF,
+    #E9EBFF,
+    #7D88FF,
+    #CAD4FF,
+    #E9EBFF
+  );
+
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveGradient 6s ease-in-out infinite;
+  display: inline-block;
+}
+
+
+p {
+  font-weight: 300;
+}
