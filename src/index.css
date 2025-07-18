@@ -51,6 +51,8 @@
   
   .bg-banner {
     background: var(--banner-background);
+    /* background-image: url(./assets/images/gradient.jpg);
+    background-size: cover; */
   }
 }
 
@@ -103,7 +105,7 @@
 
 
 .gradient-text {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right, 
     #CAD4FF,
     #7D88FF,
@@ -111,6 +113,14 @@
     #7D88FF,
     #CAD4FF,
     #E9EBFF
+  ); */
+
+  background: linear-gradient(
+    to right, 
+    #f4f6ff,
+    #7D88FF,
+    #f4f6ff,
+    #7D88FF
   );
 
   background-size: 300% 300%;
@@ -124,5 +134,5 @@
 
 p {
   font-weight: 300;
-  margin-top: 30px;
+  margin-top: 25px;
 }
