@@ -42,11 +42,13 @@
 
 @layer base {
   :root {
-    --banner-background: linear-gradient(180deg,
-  #0a0a36 0%,
-  #1f1d72 35%,
-  #4f46e5 70%,
-  #a5b4fc 100%);
+      --banner-background: linear-gradient(
+      90deg,
+      #0a0a36 0%,
+      #1f1d72 35%,
+      #4f46e5 70%,
+      #a5b4fc 100%
+    );
   }
   
   .bg-banner {
@@ -105,16 +107,6 @@
 
 
 .gradient-text {
-  /* background: linear-gradient(
-    to right, 
-    #CAD4FF,
-    #7D88FF,
-    #E9EBFF,
-    #7D88FF,
-    #CAD4FF,
-    #E9EBFF
-  ); */
-
   background: linear-gradient(
     to right, 
     #f4f6ff,
@@ -127,7 +119,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: moveGradient 6s ease-in-out infinite;
+  /* animation: moveGradient 6s ease-in-out infinite; */
   display: inline-block;
 }
 
