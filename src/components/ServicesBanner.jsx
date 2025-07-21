@@ -1,11 +1,13 @@
 export const ServicesBanner = () => {
-    return <div> 
-        The services sec
-        The services sec
-        The services sec
-        The services sec
-        The services sec
-        The services sec
-        The services sec
-    </div>;
+    return (
+        <>
+
+            <div class="services-banner-container">
+                <div class="services-banner">
+                    <h1>Nuestros servicios</h1>
+                </div>
+            </div>
+        
+        </>
+    )
 }

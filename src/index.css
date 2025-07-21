@@ -35,7 +35,7 @@
   --font-manrope: 'Manrope', sans-serif;
 
   --text-tiny: 25px;
-  --text-big: 75px;
+  --text-big: 70px;
 
 }
 
@@ -127,4 +127,26 @@
 p {
   font-weight: 300;
   margin-top: 25px;
+}
+
+
+.services-banner-container {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.services-banner {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+  /* top: -120px; superpone al banner de arriba */
+  left: 0;
+}
+
+.about-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
 }
