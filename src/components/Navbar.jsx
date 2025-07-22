@@ -63,7 +63,7 @@ export const Navbar = () => {
             {/* <span className="text-2xl text-black dark:text-white">Spaceline</span> */}
           </NavLink>
 
-          <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-end space-x-2 text-lg font-urbanist text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2">
+          <div className="absolute inset-0 hidden flex-1 flex-row items-center justify-end space-x-2 text-lg font-jakarta text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2">
             {navItems.map((item, idx) => (
               <NavLink
                 key={`link-${idx}`}

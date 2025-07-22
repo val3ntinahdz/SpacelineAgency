@@ -10,23 +10,22 @@ const Home = () => {
       <div className="relative">
         <Navbar />
 
-        <section className="bg-banner rounded-b-[35px] min-h-screen text-white flex flex-col lg:flex-row items-end justify-end px-10 pt-27 pb-40 relative overflow-hidden"> 
-
+        <section className="bg-banner glass-section rounded-b-[20px] min-h-screen text-white flex flex-col lg:flex-row items-end justify-end px-10 pt-65 pb-40 relative overflow-hidden">
+          
           {/* Contenido de texto */}
-          <div className="relative z-30 px-8 md:px-20 max-w-5xl pt-32">
-            <h1 className="font-urbanist text-big tracking-tight leading-none text-right">
-              Desarrollamos <span className="block mt-0 italic gradient-text">software. </span>
-              <br />
-              Creamos <span className="block mt-0 italic gradient-text">experiencias.</span>
+          <div className="relative z-30 px-8 md:px-20 max-w-5xl text-right">
+            <h1 className="font-jakarta text-[3.8rem] md:text-[4.6rem] leading-[1.1] tracking-tight">
+              Desarrollamos <span className="block italic gradient-text">software.</span><br />
+              Creamos <span className="block italic gradient-text">experiencias.</span>
             </h1>
 
-            <p className="text-tiny font-manrope tracking-tight text-right">
-              Combinamos estrategia, diseño y tecnología para<br />
-              llevar tu negocio al siguiente nivel.
+            <p className="text-lg md:text-xl font-manrope mt-6 text-gray-200">
+              Combinamos estrategia, diseño y tecnología<br />
+              para llevar tu negocio al siguiente nivel.
             </p>
-            
+
             <button
-              className="relative font-manrope z-10 mt-10 flex items-center justify-end gap-2 px-6 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden ml-auto"
+              className="relative font-jakarta z-10 mt-10 flex items-center justify-end gap-2 px-6 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden ml-auto"
               type="submit"
             >
               <span className="relative z-10">Contáctanos</span>
@@ -43,14 +42,17 @@ const Home = () => {
             </button>
           </div>
 
+          {/* Lottie animación */}
           <div className="hidden lg:block absolute h-full left-0 top-0 z-0">
             <div className="relative h-full w-full">
-              <HeroLottie className="w-full h-full object-cover" />
+              <HeroLottie />
             </div>
           </div>
 
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-[#131315]/90 to-transparent"></div>
+          {/* Overlay inferior */}
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-[#131315]/40 to-transparent"></div>
         </section>
+
       </div> 
 
       {/* <ThreeDMarquee /> PENDING FEATURE*/}
