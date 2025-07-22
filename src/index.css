@@ -1,22 +1,27 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Jakarta';
-  src: url('../src/assets/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-family: 'Syne';
+  src: url('../src/assets/fonts/Syne-Regular.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Jakarta';
-  src: url('../src/assets/fonts/PlusJakartaSans-Medium.ttf') format('truetype');
+  font-family: 'Syne';
+  src: url('../src/assets/fonts/Syne-SemiBold.ttf') format('truetype');
   font-weight: 600;
-  font-style: italic;
 }
 
 @font-face {
   font-family: 'Manrope';
   src: url('../src/assets/fonts/Manrope-Light.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jakarta';
+  src: url('../src/assets/fonts/PlusJakartaSans-Light.ttf') format('truetype');
   font-style: normal;
 }
 
@@ -35,8 +40,9 @@ body {
 
   --color-card: hsl(var(--card));
 
-  --font-jakarta: Jakarta, "sans-serif";
+  --font-syne: 'Syne', sans-serif;
   --font-manrope: 'Manrope', sans-serif;
+  --font-jakarta: 'Jakarta', sans-serif;
 
   --text-tiny: 25px;
   --text-big: 70px;

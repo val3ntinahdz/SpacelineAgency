@@ -14,18 +14,18 @@ const Home = () => {
           
           {/* Contenido de texto */}
           <div className="relative z-30 px-8 md:px-20 max-w-5xl text-right">
-            <h1 className="font-jakarta text-[3.8rem] md:text-[4.6rem] leading-[1.1] tracking-tight">
+            <h1 className="font-syne text-[3.8rem] md:text-[4.6rem] leading-[1.1] tracking-tight">
               Desarrollamos <span className="block italic gradient-text">software.</span><br />
               Creamos <span className="block italic gradient-text">experiencias.</span>
             </h1>
 
-            <p className="text-lg md:text-xl font-manrope mt-6 text-gray-200">
+            <p className="text-lg md:text-xl font-jakarta mt-6 text-gray-200">
               Combinamos estrategia, diseño y tecnología<br />
               para llevar tu negocio al siguiente nivel.
             </p>
 
             <button
-              className="relative font-jakarta z-10 mt-10 flex items-center justify-end gap-2 px-6 py-3 text-lg font-semibold text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden ml-auto"
+              className="relative font-syne z-10 mt-10 flex items-center justify-end gap-2 px-6 py-3 text-xl font-medium text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden ml-auto"
               type="submit"
             >
               <span className="relative z-10">Contáctanos</span>
