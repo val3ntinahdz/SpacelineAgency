@@ -8,25 +8,15 @@
 }
 
 @font-face {
-  font-family: 'Syne';
+  font-family: 'Syne Bold';
   src: url('../src/assets/fonts/Syne-SemiBold.ttf') format('truetype');
   font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../src/assets/fonts/Manrope-Light.ttf') format('truetype');
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'Jakarta';
   src: url('../src/assets/fonts/PlusJakartaSans-Light.ttf') format('truetype');
   font-style: normal;
-}
-
-body {
-  background:#f9faff;
 }
 
 
@@ -41,7 +31,7 @@ body {
   --color-card: hsl(var(--card));
 
   --font-syne: 'Syne', sans-serif;
-  --font-manrope: 'Manrope', sans-serif;
+  --font-syne-bold: 'Syne Bold', sans-serif;
   --font-jakarta: 'Jakarta', sans-serif;
 
   --text-tiny: 25px;
@@ -52,23 +42,14 @@ body {
 
 @layer base {
   :root {
-      --banner-background: radial-gradient(circle at 30% 40%, rgba(129, 140, 248, 0.2), transparent 60%),
-      radial-gradient(circle at 80% 20%, rgba(199, 210, 254, 0.15), transparent 60%),
-      linear-gradient(
-        90deg,
-        /* #0a0a36 0%,
-        #1c1b5a 30%,
-        #3b36d1 60%,
-        #818cf8 85%,
-        #c7d2fe 100% */
-
-        #c7d2fe 0%,
-        #818cf8 30%,
-        #3b36d1 60%,
-        #1c1b5a 85%,
-        #0a0a36 100%
-      );
-
+      --banner-background: linear-gradient(
+      180deg,
+      #0a0a36 0%,
+      #1c1b5a 15%,
+      #3b36d1 40%,
+      #818cf8 70%,
+      #c7d2fe 100%
+    );
   }
   
   .bg-banner {
@@ -131,7 +112,7 @@ body {
   background: linear-gradient(
     to right, 
     #f4f6ff,
-    #7D88FF,
+    #8c95fd,
     #f4f6ff,
     #7D88FF
   );
@@ -140,7 +121,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  /* animation: moveGradient 6s ease-in-out infinite; */
+  animation: moveGradient 6s ease-in-out infinite;
   display: inline-block;
 }
 
@@ -152,21 +133,20 @@ p {
 
 
 .services-banner-container {
-  position: relative;
   width: 100%;
   margin: 0 auto;
 }
 
 .services-banner {
-  background: #ffffff;
+  background: #05051e;
   border-radius: 20px;
   padding: 30px;
-  position: relative;
-  /* top: -120px; superpone al banner de arriba */
-  left: 0;
+  top: 120px; 
+  right: 0;
 }
 
 .about-container {
   border-radius: 20px;
   padding: 20px;
+
 }

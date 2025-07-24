@@ -15,8 +15,8 @@ const Home = () => {
           {/* Contenido de texto */}
           <div className="relative z-30 px-8 md:px-20 max-w-5xl text-right">
             <h1 className="font-syne text-[3.8rem] md:text-[4.6rem] leading-[1.1] tracking-tight">
-              Desarrollamos <span className="block italic gradient-text">software.</span><br />
-              Creamos <span className="block italic gradient-text">experiencias.</span>
+              Desarrollamos <span className="block font-syne-bold gradient-text">software.</span><br />
+              Creamos <span className="block font-syne-bold gradient-text">experiencias.</span>
             </h1>
 
             <p className="text-lg md:text-xl font-jakarta mt-6 text-gray-200">
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
 
           {/* Overlay inferior */}
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-[#131315]/40 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full h-160 bg-gradient-to-t from-[#131315]/30 to-transparent"></div>
         </section>
 
       </div> 
