@@ -133,12 +133,11 @@ p {
 
 
 .services-banner-container {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 
 .services-banner {
-  background: #05051e;
   border-radius: 20px;
   padding: 30px;
   top: 120px; 
