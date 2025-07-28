@@ -1,8 +1,9 @@
 import { AboutUs } from "../components/AboutUs";
 import { HeroLottie } from "../components/HeroLottie";
 import { Navbar } from "../components/Navbar";
+import { OurProcessSection } from "../components/OurProcessSection";
+import { OurWorksSection } from "../components/OurWorksSection";
 import { ServicesBanner } from "../components/ServicesBanner";
-import { ThreeDMarquee } from "../components/ThreeDMarquee";
 
 const Home = () => {
     return (
@@ -55,9 +56,10 @@ const Home = () => {
 
       </div> 
 
-      {/* <ThreeDMarquee /> PENDING FEATURE*/}
       <AboutUs />
+      <OurProcessSection />
       <ServicesBanner />
+      <OurWorksSection />
     </>
   );
 }

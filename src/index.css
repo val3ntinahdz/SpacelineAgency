@@ -21,7 +21,7 @@
 
 
 @theme {
-  --color-background: hsl(var(--background));
+  --color-background: #3b36d1;
   --color-banner-background: hsl(var(--banner-background));
   --color-foreground: hsl(var(--foreground));
 
@@ -147,5 +147,4 @@ p {
 .about-container {
   border-radius: 20px;
   padding: 20px;
-
 }

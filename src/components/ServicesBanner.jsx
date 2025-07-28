@@ -15,7 +15,7 @@ export const ServicesBanner = () => {
       span: "row-span-2", // alta
     },
     {
-      title: "Consultoría Técnica",
+      title: "Mantenimiento",
       description: "Decisiones técnicas con visión de negocio.",
       icon: <Brain className="w-8 h-8 text-[#1c1b5a]" />,
     },
@@ -27,7 +27,7 @@ export const ServicesBanner = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-[#cdd4ff] via-[#dcd9ff] to-[#e0e7ff] py-20 px-6">
+    <section className="bg-gradient-to-b from-[#ffff] via-[#e3e1fa] to-[#e0e7ff] py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-7xl font-syne-bold font-bold text-end text-[#1c1b5a] mb-16">
           Nuestros servicios
