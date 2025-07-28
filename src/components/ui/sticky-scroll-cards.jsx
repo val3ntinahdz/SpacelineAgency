@@ -102,13 +102,12 @@ export const StickyScroll = ({ content }) => {
               <motion.img
                 src={item.imageUrl}
                 alt={item.title}
-                className="w-full h-auto max-h-[80vh] object-contain"
+                className="w-full h-auto max-h-[50vh] object-contain"
                 whileHover={{ scale: 1.03 }}
               />
             </motion.div>
           </div>
         ))}
-        <div className="h-32" />
       </div>
     </motion.div>
   );

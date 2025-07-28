@@ -1,3 +1,4 @@
+import { ContactSection } from "@/components/ContactSection";
 import { AboutUs } from "../components/AboutUs";
 import { HeroLottie } from "../components/HeroLottie";
 import { Navbar } from "../components/Navbar";
@@ -8,14 +9,14 @@ import { ServicesBanner } from "../components/ServicesBanner";
 const Home = () => {
     return (
     <>
-      <div className="relative">
+      <div className="relative bg-white">
         <Navbar />
 
-        <section className="bg-banner glass-section rounded-b-[20px] min-h-screen text-white flex flex-col lg:flex-row items-end justify-end px-10 pt-65 pb-40 relative overflow-hidden">
+        <section className="bg-banner glass-section rounded-b-[60px] min-h-screen text-white flex flex-col lg:flex-row items-end justify-end px-10 pt-65 pb-40 relative overflow-hidden">
           
           {/* Contenido de texto */}
           <div className="relative z-30 px-8 md:px-20 max-w-5xl text-right">
-            <h1 className="font-syne text-[3.8rem] md:text-[4.6rem] leading-[1.1] tracking-tight">
+            <h1 className="font-syne-bold text-[3.8rem] md:text-[4.6rem] leading-[1.1] tracking-tight">
               Desarrollamos <span className="block font-syne-bold gradient-text">software.</span><br />
               Creamos <span className="block font-syne-bold gradient-text">experiencias.</span>
             </h1>
@@ -51,7 +52,7 @@ const Home = () => {
           </div>
 
           {/* Overlay inferior */}
-          <div className="absolute bottom-0 left-0 w-full h-160 bg-gradient-to-t from-[#131315]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full h-140 bg-gradient-to-t from-[#131315]/30 to-transparent"></div>
         </section>
 
       </div> 
@@ -60,6 +61,7 @@ const Home = () => {
       <OurProcessSection />
       <ServicesBanner />
       <OurWorksSection />
+      <ContactSection />
     </>
   );
 }
