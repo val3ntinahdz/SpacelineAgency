@@ -36,7 +36,7 @@ export const OurWorksSection = () => {
               <span className="inline-block px-3 py-1 rounded-full text-sm font-jakarta font-medium bg-[#3b36d1]/10 text-[#7d88ff] mb-3">
                 Desarrollo Web
               </span>
-              <h3 className="font-syne-bold text-xl text-white mb-2">Nombre del Proyecto</h3>
+              <h3 className="font-syne-bold text-xl text-white mb-2">CADEQ</h3>
               <p className="font-jakarta text-[#e0e7ff]/80">Breve descripción del proyecto y los resultados obtenidos.</p>
               <button className="mt-4 text-[#7d88ff] font-syne-bold flex items-center group-hover:text-[#918bfb] transition-colors">
                 Ver caso completo
@@ -55,7 +55,7 @@ export const OurWorksSection = () => {
               <span className="inline-block px-3 py-1 rounded-full text-sm font-jakarta font-medium bg-[#3b36d1]/10 text-[#7d88ff] mb-3">
                 UI/UX Design
               </span>
-              <h3 className="font-syne-bold text-xl text-white mb-2">Proyecto de Diseño</h3>
+              <h3 className="font-syne-bold text-xl text-white mb-2">ZooVetMX Landing Page</h3>
               <p className="font-jakarta text-[#e0e7ff]/80">Rediseño de interfaz que mejoró la experiencia de usuario.</p>
               <button className="mt-4 text-[#7d88ff] font-syne-bold flex items-center group-hover:text-[#918bfb] transition-colors">
                 Ver caso completo
@@ -74,7 +74,7 @@ export const OurWorksSection = () => {
               <span className="inline-block px-3 py-1 rounded-full text-sm font-jakarta font-medium bg-[#3b36d1]/10 text-[#7d88ff] mb-3">
                 Desarrollo de Software
               </span>
-              <h3 className="font-syne-bold text-xl text-white mb-2">Sistema Empresarial</h3>
+              <h3 className="font-syne-bold text-xl text-white mb-2">Wisecost</h3>
               <p className="font-jakarta text-[#e0e7ff]/80">Solución personalizada para gestión de procesos internos.</p>
               <button className="mt-4 text-[#7d88ff] font-syne-bold flex items-center group-hover:text-[#918bfb] transition-colors">
                 Ver caso completo

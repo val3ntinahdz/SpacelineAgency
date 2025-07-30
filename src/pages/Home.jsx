@@ -5,6 +5,7 @@ import { Navbar } from "../components/Navbar";
 import { OurProcessSection } from "../components/OurProcessSection";
 import { OurWorksSection } from "../components/OurWorksSection";
 import { ServicesBanner } from "../components/ServicesBanner";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
     return (
@@ -26,8 +27,9 @@ const Home = () => {
               para llevar tu negocio al siguiente nivel.
             </p>
 
-            <button
-              className="relative font-syne z-10 mt-10 flex items-center justify-end gap-2 px-6 py-3 text-xl font-medium text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden ml-auto"
+            <HashLink
+              to="#contact-section"
+              className="relative font-syne-bold z-10 mt-10 flex items-center justify-end gap-2 px-6 py-3 text-xl font-medium text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden ml-auto w-fit inline-flex"
               type="submit"
             >
               <span className="relative z-10">Contáctanos</span>
@@ -41,7 +43,7 @@ const Home = () => {
                   d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
                 ></path>
               </svg>
-            </button>
+            </HashLink>
           </div>
 
           {/* Lottie animación */}

@@ -71,7 +71,7 @@ export const Navbar = () => {
                 className={({ isActive }) => 
                   cn(
                     "relative px-4 py-2 text-neutral-600 dark:text-neutral-300",
-                    isActive && "font-bold text-black dark:text-white"
+                    isActive && "font-bold text-white"
                   )
                 }
               >

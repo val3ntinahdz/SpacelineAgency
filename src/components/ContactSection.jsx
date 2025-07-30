@@ -1,6 +1,6 @@
 export const ContactSection = () => {
   return (
-    <section id="contacto" className="relative bg-[#0a0a36] py-32 overflow-hidden font-jakarta">
+    <section id="contact-section" className="relative bg-[#0a0a36] py-32 overflow-hidden font-jakarta">
       {/* Efecto de constelación */}
       <div className="absolute inset-0 overflow-hidden opacity-30">
         {[...Array(30)].map((_, i) => (
@@ -73,7 +73,7 @@ export const ContactSection = () => {
                 
                 <button 
                   type="submit"
-                  className="w-full py-4 px-8 bg-gradient-to-r from-[#3b36d1] to-[#818cf8] text-white font-bold rounded-full hover:shadow-[0_0_30px_5px_rgba(59,54,209,0.3)] transition-all duration-500 hover:scale-[1.02] font-syne tracking-wide"
+                  className="w-full py-4 px-8 bg-gradient-to-r from-[#3b36d1] to-[#818cf8] text-white font-syne-bold rounded-full hover:shadow-[0_0_30px_5px_rgba(59,54,209,0.3)] transition-all duration-500 hover:scale-[1.02] font-syne tracking-wide"
                 >
                   Enviar
                 </button>
