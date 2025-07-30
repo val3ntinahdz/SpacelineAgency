@@ -30,12 +30,12 @@ export const Navbar = () => {
     <>
       {/* DESKTOP NAVBAR */}
       <motion.div
-  ref={ref}
-  className="fixed inset-x-0 top-5 z-40 w-full"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 1, ease: "easeOut" }}
->
+      ref={ref}
+      className="fixed inset-x-0 top-5 z-40 w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
     <motion.div
       animate={{
         backdropFilter: "blur(12px)",
