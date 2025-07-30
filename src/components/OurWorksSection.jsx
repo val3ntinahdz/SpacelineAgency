@@ -84,7 +84,14 @@ export const OurWorksSection = () => {
           />
         </div>
 
-        {/* ... (resto del código del botón permanece igual) ... */}
+         <div className="text-center mt-16">
+          <button className="inline-flex items-center px-8 py-3.5 rounded-full font-syne-bold text-lg border-2 border-[#3b36d1] text-white bg-[#3b36d1]/10 hover:bg-[#3b36d1]/20 hover:border-[#5a67ff] transition-all duration-300 group">
+            ¡Explora nuestro portafolio!
+            <svg className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
   );
