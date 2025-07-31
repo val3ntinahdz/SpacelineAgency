@@ -89,7 +89,7 @@ export const AboutUs = () => {
 
       {/* Imagen de fondo mejorada */}
       <div className="hidden lg:block absolute top-0 right-0 h-full w-[55%] overflow-hidden z-0">
-        <div className="absolute inset-0 bg-gradient-to-l from-white/90 via-white/70 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-l from-white/80 via-white/70 to-transparent z-10"></div>
         <img
           src={abstract}
           alt="Diseño abstracto"

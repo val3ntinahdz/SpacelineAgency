@@ -1,6 +1,6 @@
 import { ContactSection } from "@/components/ContactSection";
 import { AboutUs } from "../components/AboutUs";
-import { HeroLottie } from "../components/HeroLottie";
+import { CellphoneLottie, HeroLottie } from "../components/HeroLottie";
 import { Navbar } from "../components/Navbar";
 import { OurProcessSection } from "../components/OurProcessSection";
 import { OurWorksSection } from "../components/OurWorksSection";
@@ -13,23 +13,24 @@ const Home = () => {
       <div className="relative bg-white">
         <Navbar />
 
-        <section className="bg-banner glass-section rounded-b-[60px] min-h-screen text-white flex flex-col lg:flex-row items-end justify-end px-10 pt-65 pb-40 relative overflow-hidden">
-          
+        <section className="bg-banner glass-section rounded-b-[60px] min-h-screen text-white flex flex-col lg:flex-row items-center lg:items-end justify-center lg:justify-end px-4 sm:px-6 md:px-10 pt-30 lg:pt-50 pb-20 lg:pb-30 relative overflow-hidden">
+
           {/* Contenido de texto */}
-          <div className="relative z-30 px-8 md:px-20 max-w-5xl text-right">
-            <h1 className="font-syne-bold text-[3.8rem] md:text-[4.6rem] leading-[1.1] tracking-tight">
+          <div className="relative z-30 px-4 sm:px-6 md:px-8 lg:px-20 max-w-5xl text-center lg:text-right w-full">
+            <h1 className="font-syne-bold text-5xl md:text-[3.8rem] lg:text-[4.6rem] leading-[1.1] tracking-tight">
               Desarrollamos <span className="block font-syne-bold gradient-text">software.</span><br />
-              Creamos <span className="block font-syne-bold gradient-text">experiencias.</span>
+              Creamos <br />
+              <span className="block font-syne-bold gradient-text">experiencias.</span>
             </h1>
 
-            <p className="text-lg md:text-xl font-jakarta mt-6 text-gray-200">
-              Combinamos estrategia, diseño y tecnología<br />
-              para llevar tu negocio al siguiente nivel.
+            <p className="text-base sm:text-lg md:text-xl font-jakarta mt-4 sm:mt-6 text-gray-200">
+              Combinamos estrategia, diseño y tecnología<br className="hidden sm:block" />
+              {" "}para llevar tu negocio al siguiente nivel.
             </p>
 
             <HashLink
               to="#contact-section"
-              className="relative font-syne-bold z-10 mt-10 flex items-center justify-end gap-2 px-6 py-3 text-xl font-medium text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden ml-auto w-fit inline-flex"
+              className="relative font-syne-bold z-10 mt-6 sm:mt-8 md:mt-10 flex items-center justify-center lg:justify-end gap-2 px-5 sm:px-6 py-2 sm:py-3 text-lg sm:text-xl font-medium text-white transition-all duration-300 ease-in-out border-2 border-white/30 rounded-full shadow-lg group backdrop-blur-md bg-white/10 hover:bg-white/20 hover:text-white overflow-hidden mx-auto lg:ml-auto w-fit inline-flex"
               type="submit"
             >
               <span className="relative z-10">Contáctanos</span>
@@ -46,6 +47,14 @@ const Home = () => {
             </HashLink>
           </div>
 
+          {/* Lottie animación - móviles */}
+          <div className="lg:hidden w-full flex justify-center items-end z-20 order-2 mt-10">
+            <div className="w-full max-w-[600px] flex justify-center">
+              <CellphoneLottie />
+            </div>
+          </div>
+
+
           {/* Lottie animación */}
           <div className="hidden lg:block absolute h-full left-0 top-0 z-0">
             <div className="relative h-full w-full">
@@ -54,7 +63,7 @@ const Home = () => {
           </div>
 
           {/* Overlay inferior */}
-          <div className="absolute bottom-0 left-0 w-full h-140 bg-gradient-to-t from-[#131315]/30 to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-[#131315]/30 to-transparent"></div>
         </section>
 
       </div> 

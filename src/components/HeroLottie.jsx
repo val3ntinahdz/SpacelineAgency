@@ -13,14 +13,14 @@ export const HeroLottie = () => {
 
 export const CellphoneLottie = () => {
   return (
-    <div className="w-full max-w-[600px] h-auto aspect-square">
+    <div className="w-[90vw] max-w-[600px] h-auto aspect-square">
         <Lottie 
           animationData={cellphoneAnimation} 
           loop={true} 
           style={{ 
             width: "100%", 
             height: "100%",
-            margin: "-50px" // Ajusta este valor negativo según necesites
+            transform: "scale(1.1)" // Ajusta este valor negativo según necesites
           }} 
         />
     </div>
