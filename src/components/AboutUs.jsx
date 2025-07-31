@@ -97,13 +97,13 @@ export const AboutUs = () => {
         />
       </div>
 
-      {/* Versión mobile para la imagen */}
-      <div className="lg:hidden w-full h-64 mt-12 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-transparent z-10"></div>
+      {/* versión móvil alternativa - Imagen de fondo con overlay */}
+      <div className="lg:hidden absolute inset-0 w-full h-full opacity-27 z-0">
         <img
           src={abstract}
-          alt="Diseño abstracto"
-          className="h-full w-full object-cover"
+          alt=""
+          className="h-full w-full object-cover object-center"
+          loading="lazy"
         />
       </div>
     </section>
