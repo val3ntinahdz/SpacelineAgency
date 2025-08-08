@@ -14,5 +14,17 @@ export default defineConfig({
       // eslint-disable-next-line no-undef
       "@": path.resolve(__dirname, "./src"),
     }
+  },
+  build: {
+    chunkSizeWarningLimit: 1000, // adjust if needed
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        }
+      }
+    }
   }
 })
