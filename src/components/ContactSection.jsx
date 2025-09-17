@@ -145,6 +145,11 @@ export const ContactSection = () => {
           © {new Date().getFullYear()} Spaceline Agency. Todos los derechos reservados.
         </p>
       </div>
+      <div className="container mx-auto px-6 text-center mt-0">
+        <p className="text-white font-jakarta text-lg opacity-60">
+          Este sitio fue desarrollado por valentinaleonh8@gmail.com
+        </p>
+      </div>
 
       {/* Animaciones personalizadas */}
       <style jsx global>{`

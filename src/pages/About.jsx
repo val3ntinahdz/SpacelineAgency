@@ -13,7 +13,7 @@ const About = () => {
         <>
             <Navbar />
 
-            {/* Hero Section - Gradient Moderno */}
+            {/* Hero Section */}
             <div className="relative">
                 <div className="bg-gradient-to-bl from-[#818cf8] via-[#5d59e0] to-[#3b36d1] rounded-b-[60px] pt-24 pb-28 md:pt-28 md:pb-40 lg:pb-52 relative overflow-hidden">
                     
@@ -110,7 +110,7 @@ const About = () => {
                                 Desde el primer día, nos enfocamos en crear soluciones digitales con alto impacto, cuidando cada detalle del proceso.
                             </p>
                             <p className="font-jakarta text-[#1c1b5a] text-lg leading-relaxed">
-                                En solo siete meses, hemos colaborado con más de 12 clientes y lanzado 15 proyectos que reflejan lo que mejor sabemos hacer:  
+                                En solo siete meses, hemos colaborado con más de 10 clientes y lanzado 8 proyectos que reflejan lo que mejor sabemos hacer:  
                                 fusionar tecnología, diseño y estrategia para lograr resultados extraordinarios.
                             </p>
                         </div>
@@ -132,109 +132,6 @@ const About = () => {
                                     <h3 className="font-syne-bold text-[#3b36d1] text-3xl mb-2">∞</h3>
                                     <p className="font-jakarta text-[#1c1b5a]">Creatividad</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Fundadoras - Sección con Fondo Claro */}
-            <div className="px-8 md:px-20 lg:px-40 py-28 bg-gradient-to-b from-white via-[#f0f2ff] to-[#c7d2fe]">
-                <div className="text-center mb-16">
-                    <h2 className="font-syne-bold text-4xl text-[#0a0a36] mb-4">
-                        El stack completo detrás de 
-                        <span className="text-[#3b36d1]"> Spaceline</span>
-                    </h2>
-                    <p className="font-jakarta text-[#1c1b5a] max-w-2xl mx-auto">
-                        Combinamos habilidades técnicas y diseño estratégico para crear productos digitales integrales
-                    </p>
-                </div>
-                
-                <div className="flex flex-col md:flex-row gap-12 justify-center">
-                    {/* Tarjeta Beyda - Full Stack + PM */}
-                    <div className="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full border-t-4 border-[#3b36d1] hover:transform hover:scale-[1.02] transition-all">
-                        <div className="flex items-start justify-between">
-                            <div>
-                                <h3 className="font-syne-bold text-2xl text-[#0a0a36] mb-1">Beyda Fentanes</h3>
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    <span className="bg-[#e0e7ff] px-2 py-1 rounded-full text-xs font-jakarta text-[#3b36d1]">Project Manager</span>
-                                    <span className="bg-[#e0e7ff] px-2 py-1 rounded-full text-xs font-jakarta text-[#3b36d1]">Full Stack Dev</span>
-                                </div>
-                            </div>
-                            <div className="bg-[#f0f2ff] p-2 rounded-lg">
-                                <svg className="w-6 h-6 text-[#3b36d1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div className="mb-6">
-                            <h4 className="font-jakarta text-[#1c1b5a] mb-3 flex items-center">
-                                <svg className="w-4 h-4 mr-2 text-[#3b36d1]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-                                Especializaciones
-                            </h4>
-                            <ul className="font-jakarta text-[#1c1b5a] space-y-2 pl-6 list-disc">
-                                <li>Gestión ágil de proyectos (Scrum/Lean)</li>
-                                <li>Figma</li>
-                                <li>Desarrollo full con Ruby</li>
-                                <li>Diseño centrado en el usuario</li>
-                            </ul>
-                        </div>
-                        
-                        <div className="mb-6">
-                            <h4 className="font-jakarta text-[#1c1b5a] mb-3 flex items-center">
-                                <svg className="w-4 h-4 mr-2 text-[#3b36d1]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                                Stack técnico
-                            </h4>
-                            <div className="flex flex-wrap gap-2">
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">React/Next.js</span>
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">Node.js</span>
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">AWS</span>
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">Jira</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Tarjeta Tuya - UX + Dev */}
-                    <div className="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full border-t-4 border-[#818cf8] hover:transform hover:scale-[1.02] transition-all">
-                        <div className="flex items-start justify-between">
-                            <div>
-                                <h3 className="font-syne-bold text-2xl text-[#0a0a36] mb-1">Valentina León</h3>
-                                <div className="flex flex-wrap gap-2 mb-4">
-                                    <span className="bg-[#e0e7ff] px-2 py-1 rounded-full text-xs font-jakarta text-[#818cf8]">Full-Stack Dev</span>
-                                    <span className="bg-[#e0e7ff] px-2 py-1 rounded-full text-xs font-jakarta text-[#818cf8]">Diseñadora UX</span>
-                                </div>
-                            </div>
-                            <div className="bg-[#f0f2ff] p-2 rounded-lg">
-                                <svg className="w-6 h-6 text-[#818cf8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div className="mb-6">
-                            <h4 className="font-jakarta text-[#1c1b5a] mb-3 flex items-center">
-                                <svg className="w-4 h-4 mr-2 text-[#818cf8]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
-                                Especializaciones
-                            </h4>
-                            <ul className="font-jakarta text-[#1c1b5a] space-y-2 pl-6 list-disc">
-                                <li>Arquitectura de sistemas escalables</li>
-                                <li>Desarrollo full stack JavaScript</li>
-                                <li>Desarrollo full stack Ruby</li>
-                                <li>Diseño centrado en el usuario</li>
-                            </ul>
-                        </div>
-                        
-                        <div className="mb-6">
-                            <h4 className="font-jakarta text-[#1c1b5a] mb-3 flex items-center">
-                                <svg className="w-4 h-4 mr-2 text-[#818cf8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                                Stack técnico
-                            </h4>
-                            <div className="flex flex-wrap gap-2">
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">Figma</span>
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">React</span>
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">UX Research</span>
-                                <span className="bg-[#f0f2ff] px-3 py-1 rounded-full text-sm font-jakarta text-[#1c1b5a]">Tailwind</span>
                             </div>
                         </div>
                     </div>
@@ -302,7 +199,7 @@ const About = () => {
                                 <p className="font-jakarta text-white/90 mb-8 leading-relaxed">
                                 Metodología ágil que garantiza resultados sin sacrificar calidad o transparencia.
                                 </p>
-                                <button className="bg-white hover:bg-[#f6f7ff] text-[#0a0a36] font-jakarta-bold px-8 py-3.5 rounded-full transition-all duration-300 inline-flex items-center gap-2">
+                                <button className="bg-white hover:bg-[#f6f7ff] text-[#0a0a36] font-jakarta px-8 py-3.5 rounded-full transition-all duration-300 inline-flex items-center gap-2">
                                 Ver caso de estudio
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -346,7 +243,7 @@ const About = () => {
                 </div>
             </div>
 
-            {/* CTA Final - Rediseñado con Forma Orgánica */}
+            {/* CTA Final  */}
             <div className="relative overflow-hidden bg-[#0a0a36]">
             <div className="absolute inset-0 bg-gradient-to-br from-[#3b36d1] to-[#818cf8] transform -skew-y-3 origin-top-left z-0"></div>
             <div className="relative z-10 px-6 md:px-12 lg:px-24 py-28">
@@ -361,13 +258,13 @@ const About = () => {
                     </div>
                     
                     <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
-                        <button className="bg-white hover:bg-[#f6f7ff] text-[#0a0a36] font-jakarta-bold px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl">
+                        <button className="bg-white hover:bg-[#f6f7ff] text-[#0a0a36] font-syne-bold px-8 py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                         Agenda una llamada
                         </button>
-                        <button className="bg-transparent hover:bg-white/10 text-white font-jakarta-bold px-8 py-4 rounded-full transition-all duration-300 border-2 border-white flex items-center justify-center gap-3 shadow-lg hover:shadow-xl">
+                        <button className="bg-transparent hover:bg-white/10 text-white font-syne-bold px-8 py-4 rounded-full transition-all duration-300 border-2 border-white flex items-center justify-center gap-3 shadow-lg hover:shadow-xl">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />

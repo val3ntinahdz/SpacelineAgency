@@ -4,7 +4,8 @@ import ServiceCard from "@/components/ServiceCard";
 import ProcessStep from "@/components/ProcessStep";
 import TestimonialCard from "@/components/TestimonialCard";
 import { ContactSection } from "@/components/ContactSection";
-import { GlowCircle } from "@/components/ui/glow-circle";
+
+import secondDShape from '../assets/images/secondShape.png';
 
 const Services = () => {
   return (
@@ -12,13 +13,12 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="bg-gradient-to-bl from-[#818cf8] via-[#5d59e0] to-[#3b36d1] rounded-b-[60px] pt-28 pb-32 md:pt-36 md:pb-48">
-          <GlowCircle color="#c7d2fe" size="xl" position="top-right" opacity="30" />
-          <GlowCircle color="#a5b4fc" size="lg" position="bottom-left" opacity="20" />
+      <div className="relative">
+        <div className="bg-gradient-to-bl from-[#0a0a36] via-[#1c1b5a] via-[#3b36d1] via-[#818cf8] to-[#c7d2fe]
+ rounded-b-[60px] pt-28 pb-32 md:pt-36 md:pb-48 relative overflow-hidden">
           
-          <div className="relative z-20 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-            <div className="text-center max-w-4xl mx-auto">
+          <div className="relative z-20 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto mr-0 mt-10">
+            <div className="text-right max-w-4xl mx-auto">
               <h1 className="font-syne-bold text-white text-4xl sm:text-5xl md:text-6xl leading-tight mb-6">
                 Soluciones digitales 
                 <PointerHighlight
@@ -31,13 +31,38 @@ const Services = () => {
               </h1>
               
               <p className="font-jakarta text-[#e0e7ff] text-xl md:text-2xl leading-relaxed mb-10">
-                Diseño y desarrollo web premium para marcas que buscan destacar con una presencia digital excepcional.
+                Diseño y desarrollo web premium para marcas que buscan <br /> destacar con una presencia digital excepcional.
               </p>
-              
-              <button className="bg-white hover:bg-[#f6f7ff] text-[#3b36d1] font-syne-bold px-10 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
-                Hablar con un experto
+
+              <button
+                  className="relative font-syne-bold z-10 mt-6 sm:mt-8 md:mt-10 flex items-center gap-3 px-6 sm:px-7 py-3 sm:py-3.5 text-lg sm:text-xl font-semibold text-white transition-all duration-250 ease-out border-2 border-white/40 rounded-full shadow-lg group backdrop-blur-sm bg-white/15 hover:bg-white/25 hover:border-white/60 hover:shadow-xl active:scale-95 ml-auto w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+                  type="button"
+              >
+                  <span className="relative z-10 whitespace-nowrap">Contáctanos</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 19"
+                    className="w-6 h-6 inline-block transition-transform duration-250 ease-out bg-white/20 border border-white/40 rounded-full group-hover:translate-x-1 group-hover:rotate-90 align-middle"
+                  >
+                    <path
+                      className="fill-white group-hover:fill-white"
+                      d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                    ></path>
+                  </svg>
               </button>
             </div>
+          </div>
+
+            <div className="relative z-10 h-full w-full min-h-[400px] md:absolute md:left-0 md:top-0 md:-translate-x-1/2">
+              <img 
+                  src={secondDShape} 
+                  alt="Formas 3D abstractas"
+                  className="w-full h-auto max-w-[1200px] ml-100"
+                  style={{
+                  filter: 'drop-shadow(0 25px 50px rgba(0,0,0,0.25))',
+                  clipPath: 'inset(0 0 0 -100px)'
+                  }}
+              />
           </div>
         </div>
       </div>
@@ -151,13 +176,6 @@ const Services = () => {
                   description="Implementación en sprints con entregables funcionales cada 2 semanas"
                 />
               </div>
-              
-              <button className="mt-10 bg-[#3b36d1] hover:bg-[#1c1b5a] text-white font-jakarta-bold px-8 py-3.5 rounded-full transition-all duration-300 inline-flex items-center gap-2">
-                Descargar dossier
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
@@ -204,7 +222,7 @@ const Services = () => {
           </div>
           
           <div className="text-center">
-            <button className="bg-[#818cf8] hover:bg-[#a5b4fc] text-[#0a0a36] font-jakarta-bold px-10 py-4 rounded-full transition-all duration-300 inline-flex items-center gap-3 mx-auto">
+            <button className="bg-[#818cf8] hover:bg-[#a5b4fc] text-[#0a0a36] font-syne-bold px-10 py-4 rounded-full transition-all duration-300 inline-flex items-center gap-3 mx-auto">
               Ver todos los casos
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
